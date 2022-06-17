@@ -8,7 +8,7 @@ module.exports={
     entry:"./src/main.js",//入口
     output:{
         path:path.join(__dirname,'dist'),//路径
-        filename:"bundle.js"//出口
+        filename:"index.js"//出口
     },
     plugins:[
         new HWP({
@@ -29,6 +29,19 @@ module.exports={
                 test:/\.less$/i,
                 use:["style-loader","css-loader","less-loader"]
             },
+            {
+                test:/\.(png|gif|jpg)$/,
+                type:"asset",
+                parser:{
+                    dataUrlCondition:{
+                        maxSize:2*1024,
+                    }
+                },
+                generator:{
+                    filename:'images/[hash:6][ext]'
+                }
+            },
+
         ]
     }
 }
