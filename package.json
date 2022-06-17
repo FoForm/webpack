@@ -5,6 +5,8 @@
   "author": "gky <3061412170@qq.com>",
   "license": "MIT",
   "devDependencies": {
+    "vue-loader": "^17.0.0",
+    "vue-template-compiler": "^2.6.14",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },
@@ -20,6 +22,7 @@
     "less-loader": "^11.0.0",
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
+    "vue": "^3.2.37",
     "webpack-dev-server": "^4.9.2"
   }
 }

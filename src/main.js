@@ -16,5 +16,12 @@ document.body.appendChild(gif)
 document.body.appendChild(png)
 // 字体图标
 import './assets/fonts/iconfont.css'
+class App{
+    static a=123
+}
+console.log(App.a);
+const str=()=>console.log(111);
+str()
+import App from './app.vue'
 
 

@@ -2,6 +2,9 @@
 const path =require('path')
 
 const HWP=require('html-webpack-plugin')
+
+const { VueLoaderPlugin } = require('vue-loader')
+
 module.exports={
     // development 开发阶段,production 发布阶段
     mode:'development',
@@ -16,7 +19,7 @@ module.exports={
         })
     ],
     devServer:{
-        port:65535,
+        port:30000,
         open:true
     },
     module:{
@@ -47,7 +50,15 @@ module.exports={
                 generator:{
                     filename:'fonts/[hash:6][ext]'
                 }
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
-    }
+    },
+    plugins: [
+        // 请确保引入这个插件！
+        new VueLoaderPlugin()
+    ]
 }
