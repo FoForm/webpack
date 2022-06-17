@@ -14,5 +14,9 @@ module.exports={
         new HWP({
             template: path.join(__dirname, "public/index.html"),
         })
-    ]
+    ],
+    devServer:{
+        port:65535,
+        open:true
+    }
 }
