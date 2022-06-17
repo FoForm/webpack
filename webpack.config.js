@@ -18,5 +18,13 @@ module.exports={
     devServer:{
         port:65535,
         open:true
+    },
+    module:{
+        rules:[
+            {
+                test:/\.css$/i,
+                use:["style-loader","css-loader"]
+            },
+        ]
     }
 }
