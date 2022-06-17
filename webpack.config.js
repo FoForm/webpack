@@ -7,7 +7,7 @@ module.exports={
     mode:'development',
     entry:"./src/main.js",//入口
     output:{
-        path:path.join(__dirname,'dist'),//路径
+        path:path.join(__dirname,'lib'),//路径
         filename:"index.js"//出口
     },
     plugins:[
@@ -41,7 +41,13 @@ module.exports={
                     filename:'images/[hash:6][ext]'
                 }
             },
-
+            {
+                test:/\.(eot|svg|ttf|woff|woff2)$/,
+                type:'asset/resource',
+                generator:{
+                    filename:'fonts/[hash:6][ext]'
+                }
+            }
         ]
     }
 }

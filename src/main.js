@@ -14,6 +14,7 @@ gif.src=gifSrc
 png.src=pngSrc
 document.body.appendChild(gif)
 document.body.appendChild(png)
-
+// 字体图标
+import './assets/fonts/iconfont.css'
 
 
