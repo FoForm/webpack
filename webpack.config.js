@@ -3,6 +3,8 @@ const path =require('path')
 
 const HWP=require('html-webpack-plugin')
 module.exports={
+    // development 开发阶段,production 发布阶段
+    mode:'development',
     entry:"./src/main.js",//入口
     output:{
         path:path.join(__dirname,'dist'),//路径
