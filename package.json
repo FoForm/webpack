@@ -5,6 +5,9 @@
   "author": "gky <3061412170@qq.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "mini-css-extract-plugin": "^2.6.1",
     "vue-loader": "^17.0.0",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^5.73.0",
